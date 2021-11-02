@@ -1,0 +1,27 @@
+baseURL: https://mvrcrk.space/
+languageCode: en-us
+title: mvrck
+theme: PaperMod
+
+params:
+    defaultTheme: dark
+    showReadingTime: true
+    
+    homeInfoParams:
+      Title: "Привет ! Здесь я пишу про технологии, инсайты и продукты"
+      Content: Какой-то текст про то какаой-же я крутой и бла бла бла.
+    socialIcons:
+        - name: telegram
+          url: "https://t.me/mvrck96"
+        - name: github
+          url: "https://github.com/mvrck96"
+menu:
+    main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
