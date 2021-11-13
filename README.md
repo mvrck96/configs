@@ -3,7 +3,7 @@ Personal configs for different tools e.g. Nginx, hugo, tmux
 
 
 Currently included:
-- `Hugo`
+- ~~`Hugo`~~
 - `nginx`
 - `tmux`
 - `streamlit`
