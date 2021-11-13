@@ -1,15 +1,29 @@
 baseURL: https://mvrcrk.space/
-languageCode: en-us
-title: mvrck
+languageCode: ru-ru
+title: LOCAL__BLOG
 theme: PaperMod
+enableEmoji: true
+favicon: "/favicon.ico"
 
 params:
-    defaultTheme: dark
+    defaultTheme: light
+    ShowPostNavLinks: true
     showReadingTime: true
-    
+    disableThemeToggle: flase
+    # comments: true
+    # responsiveImages: true
+    # linkFullImages: false
+    # ShowShareButtons: true
+    # ShowBreadCrumbs: true
+   
     homeInfoParams:
-      Title: "Привет ! Здесь я пишу про технологии, инсайты и продукты"
-      Content: Какой-то текст про то какаой-же я крутой и бла бла бла.
+      Title: "Салют ! Здесь я пишу про проекты, инсайты и технологии"
+      Content: > 
+            **Gen-Z, учусь в магистратуре, занимаюсь data-driven проектами и триатлоном**
+
+            - Мои проекты можно найти на [гитхабе](https://gtihub.com/mvrck96), а CV *(резюме)* находится во вкладке [CV](cv_ru)
+
+            - Если ты хочешь со мной связаться или на сайте что-то не работает --> пиши в [телеграм](https://t.me/mvrck96) или на почту *maverickmsk1@gmail.com*
     socialIcons:
         - name: telegram
           url: "https://t.me/mvrck96"
@@ -17,11 +31,20 @@ params:
           url: "https://github.com/mvrck96"
 menu:
     main:
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
+        - name:  О чем был пост ?
+          url: tags
+          weight: 1
+        - name: Поиск
+          url: search
+          weight: 2
+        - name: Архив
+          url: archives
+          weight: 3
+        - name: CV
+          url: /cv_ru/
+          weight: 4
+output:
+    home:
+        - HTML
+        - RSS
+        - JSON
