@@ -21,3 +21,6 @@ matches:
 
   - trigger: ";site"
     replace: "https://mvrck.space/"
+
+  - trigger: ";channel"
+    replace: "@maverick_notes"
