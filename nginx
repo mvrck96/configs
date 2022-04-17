@@ -4,16 +4,16 @@ server {
 
         server_name mvrck.space www.mvrck.space;
 
-        location / {
+        location / { # blog location 
                 root /home/iao/home/blog/public;
                 index index.html;
         }
 
-        location /flask/ {
+        location /flask/ { # optional python service proxy pass
                 proxy_pass http://127.0.0.1:5000;
         }
 
-        location /streamlit/ {
+        location /streamlit/ { # dashboard proxy pass
                 proxy_pass http://127.0.0.1:8051;
 
                 proxy_set_header   Host      $host;
