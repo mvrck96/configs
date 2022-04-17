@@ -102,4 +102,5 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -lah"
 alias cls="clear"
 alias xcp="xclip -selection clipboard"
-alias snx_con='snx -s 87.245.138.226 -u ivan.oleynikov@idp.zyfra.com'
+
+export DISABLE_AUTO_TITLE=true
